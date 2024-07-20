@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime portal</title>
+    <link rel="stylesheet" href="naruto.css">
+    <link rel="stylesheet" href="naruto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <div class="anime-details">
+        <h1>Наруто Ураганные хроники / Naruto: Shippuuden</h1>
+        <img class="right-image" src="IMAGE/naruto.jpg" alt=">Наруто Ураганные хроники ">
+        <p class="detail-description">Сезон: 2007 лето</p>
+        <p class="detail-description">Тип:ТВ (>450 эп.), 25 мин.</p>
+        <p class="detail-description">Жанры: Боевые искусства, Приключения, Сёнен</p>
+        <p class="detail-description">Тайминг: pomidorchik</p>
+        <hr class="poloska-detail">
+        <p class="detail-description">Приключения самого известного в мире шиноби продолжаются! Наруто идёт к своей мечте - стать хокаге, преодолевая трудности и попадая в передряги. Его друг, а порой и противник, Саске также не стоит на месте и становится всё сильней, идя к своей целе отомстить брату Итачи. Чем же закончится эта история о дружбе, мечте и мести?</p>
+
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://a.anilibria.sbs/public/iframe.php?id=413" type="text/html" width=840 height=515 frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="link-container">
+        <a href="index.html" class="link-icon">
+            <i class="fas fa-home"></i> Bosh menu
+        </a>
+        <a href="https://youtube.com/@memecoinsuz?si=WcSfuxVyILH95IZR" class="link-icon">
+            <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a href="https://t.me/+-Wr3ogiSIQlmOTli/" class="link-icon">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById('clock').innerHTML = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000); 
+    </script>
+</body>
+</html>

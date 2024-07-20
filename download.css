@@ -1,0 +1,64 @@
+.screenshots h2{
+    display: inline-flex;
+    font-size: 2.em;
+    font-weight: 500;
+    border-bottom: 70px solid var(--red);
+    color:#000000;
+    margin-top:1.6rem;
+}
+
+.screenshots-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    gap:10px;
+    justify-content:center;
+    margin: auto;
+    width: 100%;
+}
+
+.screenshots-content img{
+    width: 100%;
+    height:219.94px;
+    object-fit: cover;
+    margin-top: 1.6rem;
+}
+
+.download{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    justify-content:center;
+    margin-top: 2rem;
+
+}
+
+.download h2{
+    text-align:center;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin:1.6rem 0;
+    color: #3b05ff;
+}
+
+.downlod-links{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    margin-bottom: 2rem;
+}
+
+.downlod-links a{
+    text-align:center;
+    background: var(--red);
+    padding:12px 20px;
+    color: #fff;
+    letter-spacing:1px;
+    font-size: 500;
+}
+
+.downlod-links a:hover{
+    background: var(--black);
+    color: var(--red);
+    transition: 0.3s all linear;
+}

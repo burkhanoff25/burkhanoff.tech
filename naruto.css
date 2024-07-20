@@ -1,0 +1,184 @@
+  /* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#clock {
+    font-size: 100px;
+    margin: 20px auto; /* Center the clock */
+    text-align: center;
+    color: #ba5370;
+    text-decoration: none; /* Remove any underlines */
+}
+
+.link-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Light background for the button */
+    border-radius: 5px;
+}
+
+.anime-details {
+    width: 300px; /* Example width for your container */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+.anime-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.right-image {
+    float: right;
+    margin-left: 10px;
+    max-width: 300px; /* Adjust the image width as needed */
+    border-radius: 5px;
+}
+
+.detail-description {
+    font-size: 15.7px;
+    margin-bottom: 10px;
+}
+
+.poloska-detail {
+    margin-top: 15.7px;
+    margin-bottom: 15.7px;
+    border-bottom: 1px solid #fcfcfc;
+}
+
+.other-sites {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.other-sites h3 {
+    margin-bottom: 10px;
+}
+
+.other-sites a {
+    text-decoration: none;
+    color: #f7f7f7;
+    padding: 8px 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    margin: 5px;
+}
+.video-container {
+    margin: 20px auto; /* Center the container horizontally */
+    width: 840px;    /* Set the width of the player */
+    /* ... other styles for the container if needed ... */
+}
+/* ... kanekumi style ... */
+
+.link-container {
+    text-align: center;
+    margin: 20px 0;
+    display: flex; /* Use flexbox for better layout */
+    justify-content: center; /* Center the links */
+}
+
+.link-icon {
+    text-decoration: none;
+    color: #faf7f7;
+    padding: 15px 25px; /* Increased padding for larger size */
+    background-color: #f4e2d8; 
+    border-radius: 5px;
+    margin: 5px;
+    display: flex; /* Align the icon and text */
+    align-items: center; /* Vertical alignment */
+}
+
+.link-icon i { /* Style the Font Awesome icons */
+    margin-right: 20px; /* Space between icon and text */
+    font-size: 1.5em;  /* Make the icons larger */
+}
+.anime-details img { /* Assuming your image is inside a div with class 'anime-details' */
+    margin-top: 15px; /* Adjust the value as needed */
+  }
+  .right-image {
+  /* Remove float: right */
+  max-width: 300px; /* Adjust the image width as needed */
+  border-radius: 10px;
+  margin: px auto; /* Center the image horizontally */
+  display: block; /* Ensure the image takes up the full width */
+}
+/* ... naruto ... */
+
+.link-container {
+    text-align: center;
+    margin: 20px 0;
+    display: flex; /* Use flexbox for better layout */
+    justify-content: center; /* Center the links */
+}
+
+.link-icon {
+    text-decoration: none;
+    color: #faf7f7;
+    padding: 15px 25px; /* Increased padding for larger size */
+    background-color: #f4e2d8; 
+    border-radius: 5px;
+    margin: 5px;
+    display: flex; /* Align the icon and text */
+    align-items: center; /* Vertical alignment */
+}
+
+.link-icon i { /* Style the Font Awesome icons */
+    margin-right: 20px; /* Space between icon and text */
+    font-size: 1.5em;  /* Make the icons larger */
+}
+.anime-details img { /* Assuming your image is inside a div with class 'anime-details' */
+    margin-top: 15px; /* Adjust the value as needed */
+  }
+  .right-image {
+  /* Remove float: right */
+  max-width: 300px; /* Adjust the image width as needed */
+  border-radius: 10px;
+  margin: px auto; /* Center the image horizontally */
+  display: block; /* Ensure the image takes up the full width */
+}
+/* Styles for Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .main-content {
+        font-size: 18px;
+    }
+}
+
+/* Styles for Desktops */
+@media (min-width: 769px) {
+    .container {
+        width: 70%;
+    }
+    .main-content {
+        font-size: 20px;
+    }
+}
+/* Styles for smaller screens (phones) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stack sections vertically */
+    }
+    .posts, .sidebar {
+        flex: 1 1 100%; /* Both sections take full width */
+    }
+    .sidebar {
+        margin-top: 20px; /* Add space between sections */
+    }
+}
