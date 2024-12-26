@@ -1,0 +1,5 @@
+.root {
+    padding: 0;
+    background: var(--burkhanoff.tech-background-color);
+    z-index: 0;
+}

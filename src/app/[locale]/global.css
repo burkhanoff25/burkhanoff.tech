@@ -1,0 +1,57 @@
+:root {
+    @mixin light-root {
+        --burkhanoff.tech-background-color: #fff;
+        --burkhanoff.tech-ripple-color: #0000004d;
+        --burkhanoff.tech-sidebar-color: #fdfdfd;
+        --burkhanoff.tech-text-contrast-color: #000;
+        --burkhanoff.tech-text-contrast-reversed-color: #fff;
+        --burkhanoff.tech-accent-color: #000;
+        --burkhanoff.tech-secondary-color: darken(var(--burkhanoff.tech-sidebar-color), 0.025);
+    }
+
+    @mixin dark-root {
+        --burkhanoff.tech-background-color: #000;
+        --burkhanoff.tech-ripple-color: #ffffff4c;
+        --burkhanoff.tech-sidebar-color: #080808;
+        --burkhanoff.tech-text-contrast-color: #fff;
+        --burkhanoff.tech-text-contrast-reversed-color: #000;
+        --burkhanoff.tech-accent-color: #fff;
+        --burkhanoff.tech-secondary-color: lighten(var(--burkhanoff.tech-sidebar-color), 0.025);
+    }
+}
+
+html {
+    overflow: hidden;
+    overscroll-behavior: none;
+
+    @media screen and (max-width: rem(750px)) {
+        overflow-y: auto;
+    }
+}
+
+body {
+    background: var(--burkhanoff.tech-background-color);
+    scrollbar-color: #606060 transparent;
+}
+
+.root-group {
+    background: var(--burkhanoff.tech-sidebar-color);
+}
+
+.app-wrapper {
+    background: var(--burkhanoff.tech-background-color);
+    box-sizing: border-box;
+    border-radius: rem(12px) 0 0 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    border-top: rem(1px) solid var(--mantine-color-default-border);
+    border-left: rem(1px) solid var(--mantine-color-default-border);
+
+    @media (max-width: rem(750)) {
+        border: none;
+        border-radius: 0;
+        height: auto;
+        overflow-y: auto;
+    }
+}

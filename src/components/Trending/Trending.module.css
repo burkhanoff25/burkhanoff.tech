@@ -1,0 +1,8 @@
+.control {
+    z-index: 1000;
+
+    &:not(:where([data-active])) {
+        background: var(--burkhanoff.tech-secondary-color);
+        border: none;
+    }
+}

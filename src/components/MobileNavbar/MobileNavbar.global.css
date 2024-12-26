@@ -1,0 +1,11 @@
+.react-modal-sheet-container {
+    background: var(--burkhanoff.tech-background-color) !important;
+}
+
+.react-modal-sheet-content {
+    padding: rem(16px) rem(16px) 0;
+}
+
+.react-modal-sheet-backdrop  {
+    cursor: pointer;;
+}

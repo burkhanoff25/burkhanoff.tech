@@ -1,0 +1,20 @@
+.stack {
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.loaderButton {
+    min-width: fit-content;
+}
+
+.input {
+    background: var(--burkhanoff.tech-secondary-color);
+    border-color: alpha(var(--burkhanoff.tech-text-contrast-color), 0.05);
+
+    &:focus-within {
+        border-color: var(--burkhanoff.tech-text-contrast-color);
+    }
+}

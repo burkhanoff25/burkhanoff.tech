@@ -1,0 +1,44 @@
+.root {
+    background: none;
+    flex-shrink: 0;
+    border-radius: 0;
+}
+
+.chevron {
+    transition: 150ms ease;
+}
+
+.chevronRotated {
+    transform: rotate(-180deg) !important;
+}
+
+.stack {
+    width: 100%;
+}
+
+.select {
+    width: 100%;
+
+    &:focus {
+        border-color: var(--burkhanoff.tech-text-contrast-color);
+    }
+}
+
+.select, .dropdown {
+    background: var(--burkhanoff.tech-secondary-color);
+    border-radius: var(--mantine-radius-md);
+    border-color: alpha(var(--burkhanoff.tech-text-contrast-color), 0.05);
+}
+
+.options {
+    border-radius: var(--mantine-radius-md);
+    overflow: clip;
+}
+
+.option {
+    border-radius: var(--mantine-radius-md);
+
+    @mixin hover {
+        background: alpha(var(--burkhanoff.tech-text-contrast-color), 0.05);
+    }
+}

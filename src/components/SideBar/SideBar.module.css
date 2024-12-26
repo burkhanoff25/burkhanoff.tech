@@ -1,0 +1,15 @@
+.sidebar {
+    background: var(--burkhanoff.tech-sidebar-color);
+    padding: rem(16px) 0;
+    flex-shrink: 0;
+    width: rem(96px);
+    height: 100vh;
+    transition: 150ms ease;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.opened {
+    width: rem(320px);
+}
